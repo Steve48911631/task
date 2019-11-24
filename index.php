@@ -15,7 +15,7 @@ if (empty($val) || !isset($val['id'])) {
 }
 else {
     
-    $costumer = new \models\Customer();   
-    $costumer->getTransactions($val['id']);
+    $costumer = new \models\Customer();  //load file when creating model 
+    $costumer->getTransactions((int)$val['id']); //print results on command line
       
 }
